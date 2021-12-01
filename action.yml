@@ -1,5 +1,5 @@
-name: 'Blog Custom Github Action'
-description: 'Call an API and get the result'
+name: 'Update all go dependencies'
+description: 'Update all go dependencies'
 runs:
   using: "composite"
   steps:
