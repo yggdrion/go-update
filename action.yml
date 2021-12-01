@@ -3,10 +3,9 @@ description: 'Call an API and get the result'
 runs:
   using: "composite"
   steps:
-    - name: update go deps
-      shell: bash
-      run: |
-        ls -lah \
-        go mod tidy \
-        go get -modfile=go.mod -d -d -u -t ./...  \
-        go mod tidy
+    - shell: bash
+      run: go mod tidy
+    - shell: bash
+      run: go get -modfile=go.mod -d -d -u -t ./...
+    - shell: bash
+      run: go mod tidy
