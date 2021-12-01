@@ -5,7 +5,7 @@ runs:
   steps:
     - name: update go deps
       shell: bash
-    - run: |
+      run: |
         go mod tidy \
         go get -modfile=go.mod -d -d -u -t ./...  \
         go mod tidy
